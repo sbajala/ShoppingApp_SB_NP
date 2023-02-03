@@ -9,7 +9,6 @@ Customers have their own personal shopping cart. They are able to do the followi
 - View their total.
 - Checkout.
 
-
 ## Required features
 
 ### Log in and Log out 
