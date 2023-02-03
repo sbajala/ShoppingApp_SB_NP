@@ -1,6 +1,10 @@
 # Shopping App
 WPF desktop application (C#) using XAML for UI design that simulates a shopping application.
 
+## Programming languages and technologies used
+- C#
+- VS code
+
 ## Description
 Customers have their own personal shopping cart and are able to do the following: 
 - View products offered in the store's inventory.
