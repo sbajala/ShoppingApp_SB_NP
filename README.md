@@ -3,7 +3,7 @@ WPF desktop application (C#) using XAML for UI design that simulates a shopping 
 
 ## Programming languages and technologies used
 - C#
-- VS code
+- Visual Studio Code
 - Microsoft SQL Server
 
 ## Description
