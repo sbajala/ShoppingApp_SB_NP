@@ -18,7 +18,7 @@ We have implement a login and logout authentication. Usernames cannot be duplica
 Our customer features include viewing all products (including product name, quantity, price, and description). Users can modify the quantity of a product they wish to buy, add and remove products from their carts, and buy a product right away or put the product in their cart. Users may click on their cart button at the top right to see the list of their purchases as well as their total.
 Admin users are also able view all products, however they are able to modify the inventory (adding and removing products) via a form table.
 
-## Data persistence
+### Data persistence
 All of our data (users and products) are stored persistenly in a database. Products are updated regularly as clients buy products and as admins upgrade the inventory by adding or removing procuts. With regards to passwords, the salt and hash of the passwords are stored in the database and accessed only when a user logs in.
 
 
