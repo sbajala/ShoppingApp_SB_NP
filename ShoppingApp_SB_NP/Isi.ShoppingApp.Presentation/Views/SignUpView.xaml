@@ -1,0 +1,98 @@
+﻿<Window x:Class="Isi.ShoppingApp.Presentation.Views.SignUpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Isi.ShoppingApp.Presentation.Views"
+        mc:Ignorable="d" Title="Sign Up" MaxWidth="285" MaxHeight="400">
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="120"/>
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="120"/>
+        </Style>
+
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Background" Value="WhiteSmoke"/>
+        </Style>
+
+        <Style TargetType="Separator">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Border BorderThickness="2"
+            BorderBrush="#FFBA24"
+            Margin="5"
+            CornerRadius="3">
+        <StackPanel Margin="10"
+                Width="240">
+            
+            <Border CornerRadius="3" BorderThickness="1"
+                    BorderBrush="#FFBA24">
+                <Label Content="Sign up"
+               FontWeight="Bold"
+               FontSize="14"
+                   Foreground="White"
+               Padding="10"
+                   Width="240"
+                   Background="#FFBA24"/>
+            </Border>
+
+            <Separator/>
+
+            <StackPanel>
+                <Label Content="First Name"/>
+                <TextBox Text="{Binding Path=FirstName, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Last Name"/>
+                <TextBox Text="{Binding Path=LastName, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+
+            <Separator/>
+
+            <StackPanel>
+                <Label Content="Username"/>
+                <TextBox Text="{Binding Path=Username, UpdateSourceTrigger=PropertyChanged}"
+                             ToolTip="Username cannot contain spaces or special characters and must be in lowercase."/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Password "/>
+                <PasswordBox x:Name="passwordBox"
+                                 PasswordBox.PasswordChanged="PasswordBox_PasswordChanged"/>
+            </StackPanel>
+
+            <Separator/>
+
+            <DockPanel>
+                <Button Content="Create account"
+                            Command="{Binding Path=SignUpCommand}"
+                            Width="100"/>
+            </DockPanel>
+
+        </StackPanel>
+    </Border>
+</Window>

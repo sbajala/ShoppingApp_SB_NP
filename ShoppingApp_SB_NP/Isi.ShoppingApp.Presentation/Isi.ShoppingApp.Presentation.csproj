@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+    <None Remove="Views\Img\Icons\minus.png" />
+    <None Remove="Views\Img\shopping-cart.png" />
+    <None Remove="Views\Img\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Isi.ShoppingApp.Core\Isi.ShoppingApp.Core.csproj" />
+    <ProjectReference Include="..\Isi.ShoppingApp.Domain\Isi.ShoppingApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Img\Icons\minus.png" />
+    <Resource Include="Views\Img\Icons\shopping-cart.png" />
+    <Resource Include="Views\Img\Icons\user.png" />
+  </ItemGroup>
+
+</Project>
