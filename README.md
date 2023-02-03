@@ -2,7 +2,7 @@
 WPF desktop application (C#) using XAML for UI design that simulates a shopping application.
 
 ## Description
-Customers have their own personal shopping cart. They are able to do the following: 
+Customers have their own personal shopping cart and are able to do the following: 
 - View products offered in the store's inventory.
 - Add and/or remove products from their carts.
 - Update the quantities of products in their shopping cart.
