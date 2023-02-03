@@ -1,4 +1,4 @@
-# ShoppingApp
+# Shopping App
 WPF desktop application (C#) using XAML for UI design that simulates a shopping application.
 
 ## Description
