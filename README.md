@@ -22,10 +22,13 @@ Admin users are also able view all products, however they are able to modify the
 All of our data (users and products) are stored persistenly in a database. Products are updated regularly as clients buy products and as admins upgrade the inventory by adding or removing procuts. With regards to passwords, the salt and hash of the passwords are stored in the database and accessed only when a user logs in.
 
 
-### Optional features:
+## Optional features
 
 We decided to implement a sign up feature in which users can create an account. This feature is strictly for clients, so accounts created through the sign up window will have client features. This means admin users would be created internally as there is no option to sign up as an admin. However, if a user is indeed an admin, they will have additional features and accessibility, such as changing prices, adding/removing products, and updating product quantities.
 
 
-Future considerations:
+### Future considerations
 An interesting feature that could be considered for the future is implemeting a button that reveals the password that users have typed. This way, users could see if they have correctly entered their password or not. We would've also liked to implement a drop down menu where users could see their balance or perhaps add to their balance (wallet).
+
+## Credits
+Created by Sharmaine Bajala and [Nicolas Perdomo](https://github.com/nicolasperdomol).
